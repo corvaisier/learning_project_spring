@@ -1,18 +1,16 @@
-package main.java.cli;
+package com.julien.sportapi.cli;
+
+import com.julien.sportapi.domain.Coach;
+import com.julien.sportapi.domain.Gym;
+import com.julien.sportapi.domain.Subscription;
+import com.julien.sportapi.service.CoachService;
+import com.julien.sportapi.service.GymService;
+import com.julien.sportapi.service.SubscriptionService;
 
 import java.util.List;
 import java.util.Scanner;
 
-import main.java.domain.Coach;
-import main.java.domain.Gym;
-import main.java.domain.Subscription;
-import main.java.service.CoachService;
-import main.java.service.GymService;
-import main.java.service.SubscriptionService;
 
-/**
- * Est responsable des entrée/sortie utilisateurs
- */
 public class CliController {
     // a un dépendance vers bookService
     private GymService GymService;

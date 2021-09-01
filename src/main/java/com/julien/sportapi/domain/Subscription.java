@@ -1,4 +1,4 @@
-package main.java.domain;
+package com.julien.sportapi.domain;
 
 import java.util.Date;
 import java.util.Map;

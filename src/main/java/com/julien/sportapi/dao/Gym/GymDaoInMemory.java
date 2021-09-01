@@ -1,9 +1,9 @@
-package main.java.dao.Gym;
+package com.julien.sportapi.dao.Gym;
+
+import com.julien.sportapi.domain.Gym;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import main.java.domain.Gym;
 
 public class GymDaoInMemory implements GymDao {
     private List<Gym> gyms = new ArrayList<>();

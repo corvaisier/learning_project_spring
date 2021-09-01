@@ -1,9 +1,10 @@
-package main.java.dao.Subscription;
+package com.julien.sportapi.dao.Subscription;
+
+import com.julien.sportapi.domain.Subscription;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import main.java.domain.Subscription;
 
 public class SubscriptionDaoInMemory implements SubscriptionDao {
     private List<Subscription> subscriptions = new ArrayList<>();

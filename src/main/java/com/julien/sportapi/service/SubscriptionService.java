@@ -1,9 +1,10 @@
-package main.java.service;
+package com.julien.sportapi.service;
+
+import com.julien.sportapi.dao.Subscription.SubscriptionDao;
+import com.julien.sportapi.domain.Subscription;
 
 import java.util.List;
 
-import main.java.dao.Subscription.SubscriptionDao;
-import main.java.domain.Subscription;
 
 public class SubscriptionService {
     

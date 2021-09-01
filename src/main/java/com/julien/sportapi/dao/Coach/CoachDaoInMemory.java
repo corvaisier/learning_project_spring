@@ -1,9 +1,11 @@
-package main.java.dao.Coach;
+package com.julien.sportapi.dao.Coach;
+
+import com.julien.sportapi.domain.Coach;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
-import main.java.domain.Coach;
 
 public class CoachDaoInMemory implements CoachDao {
     private List<Coach> coachs = new ArrayList<>();
@@ -12,8 +14,8 @@ public class CoachDaoInMemory implements CoachDao {
         return coachs;
     }
 
-    public Coach findById(Integer id) {
-        return coachs.get(id);
+    public Optional<Coach> findByName(String coach_Name) {
+        return coachs.stream().filter(coach -> coach.getCoach_Name().equals(coach_Name)).findFirst();
     }
 
     public void add(Coach coach) {
@@ -21,9 +23,6 @@ public class CoachDaoInMemory implements CoachDao {
     }
 
     public void delete(String coach_Name) {
-        Coach coach = coachs.stream()
-                .filter(coach -> coach.getCoach_Name().equals(coach_Name)).;
-        coachs.remove(coach.getClass());
     }
 
 }

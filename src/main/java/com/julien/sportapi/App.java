@@ -1,10 +1,15 @@
-package main.java;
+package com.julien.sportapi;
 
-import main.java.cli.*;
-import main.java.dao.Coach.*;
-import main.java.dao.Gym.*;
-import main.java.dao.Subscription.*;
-import main.java.service.*;
+import com.julien.sportapi.cli.CliController;
+import com.julien.sportapi.dao.Coach.CoachDao;
+import com.julien.sportapi.dao.Coach.CoachDaoInMemory;
+import com.julien.sportapi.dao.Gym.GymDao;
+import com.julien.sportapi.dao.Gym.GymDaoInMemory;
+import com.julien.sportapi.dao.Subscription.SubscriptionDao;
+import com.julien.sportapi.dao.Subscription.SubscriptionDaoInMemory;
+import com.julien.sportapi.service.CoachService;
+import com.julien.sportapi.service.GymService;
+import com.julien.sportapi.service.SubscriptionService;
 
 public class App {
     public static void main(String[] args) {

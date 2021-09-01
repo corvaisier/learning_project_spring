@@ -1,10 +1,11 @@
-package main.java.service;
+package com.julien.sportapi.service;
+
+import com.julien.sportapi.dao.Gym.GymDao;
+import com.julien.sportapi.domain.Gym;
 
 import java.util.List;
 import java.util.UUID;
 
-import main.java.dao.Gym.GymDao;
-import main.java.domain.Gym;
 
 public class GymService {
 

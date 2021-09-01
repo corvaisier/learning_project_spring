@@ -1,8 +1,9 @@
-package main.java.dao.Subscription;
+package com.julien.sportapi.dao.Subscription;
+
+import com.julien.sportapi.domain.Subscription;
 
 import java.util.List;
 
-import main.java.domain.Subscription;
 
 public interface SubscriptionDao {
     List<Subscription> findAll();

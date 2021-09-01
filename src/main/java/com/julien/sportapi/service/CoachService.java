@@ -1,10 +1,11 @@
-package main.java.service;
+package com.julien.sportapi.service;
 
+import com.julien.sportapi.dao.Coach.CoachDao;
+import com.julien.sportapi.domain.Coach;
+
+import java.util.Optional;
 import java.util.UUID;
 import java.util.List;
-
-import main.java.dao.Coach.CoachDao;
-import main.java.domain.Coach;
 
 public class CoachService {
 
@@ -15,8 +16,8 @@ public class CoachService {
     }
 
     public void add(String coach_Name) {
-        Coach newcoach = new Coach(UUID.randomUUID(), coach_Name);
-        coachDao.add(newcoach);
+        Coach newCoach = new Coach(UUID.randomUUID(), coach_Name);
+        coachDao.add(newCoach);
     }
 
     public void delete(String coach_Name) {
@@ -27,8 +28,8 @@ public class CoachService {
         return coachDao.findAll();
     }
 
-    public Coach findById(Integer id) {
-        return coachDao.findById(id);
+    public Optional<Coach> findByName(String coach_Name) {
+        return coachDao.findByName(coach_Name);
     }
 
 }
